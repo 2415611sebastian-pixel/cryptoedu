@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --color-dark-blue: #0A192F; 
+    --color-navy: #172A45;     
+    --color-gold: #FFD700;     
+    --color-light-slate: #CCD6F6; 
+    --color-green: #37BC9B;    
+    --color-red: #DA4453;     
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-dark-blue);
+    color: var(--color-light-slate);
+    line-height: 1.6;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: var(--color-navy);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-gold);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--color-light-slate);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-gold);
+}
+
+.btn-login a {
+    background-color: var(--color-gold);
+    color: var(--color-dark-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+
+.container {
+    padding: 2rem 3rem;
+}
+
+
+.edu-section {
+    padding: 2rem 0;
+}
+
+.edu-section h3 {
+    color: var(--color-gold);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.video-item {
+    background-color: var(--color-navy);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+.video-item p {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.header-market {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.crypto-list-section h2 {
+    color: var(--color-light-slate);
+    font-size: 1.8rem;
+}
+
+#refreshDataBtn {
+    background-color: var(--color-gold);
+    color: var(--color-dark-blue);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+#refreshDataBtn:hover {
+    background-color: #e6c300;
+}
+
+.crypto-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-navy);
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.crypto-table th, .crypto-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.crypto-table thead th {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.crypto-table tbody tr:hover {
+    background-color: #243a57;
+}
+
+.change.positive {
+    color: var(--color-green);
+    font-weight: 600;
+}
+
+.change.negative {
+    color: var(--color-red);
+    font-weight: 600;
+}
+
+.btn-trade {
+    background-color: var(--color-green);
+    color: var(--color-dark-blue);
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.8rem;
+    transition: background-color 0.3s;
+}
+
+.btn-trade:hover {
+    background-color: #2e9f80;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+}
+
+.nav-links li.active a {
+    color: var(--color-gold); 
+    border-bottom: 2px solid var(--color-gold); 
+    padding-bottom: 0.2rem;
+}
+
+.portfolio-summary {
+    padding-bottom: 2rem;
+}
+
+.portfolio-summary h2 {
+    color: var(--color-light-slate);
+    margin-bottom: 1.5rem;
+}
+
+.summary-cards {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: var(--color-navy);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card h4 {
+    color: var(--color-gold);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.value-large {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.value-medium {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.value-large.positive, .value-medium.positive {
+    color: var(--color-green);
+}
+
+.value-large.negative, .value-medium.negative {
+    color: var(--color-red);
+}
+
+.portfolio-holdings h2 {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoEdu - Market Kripto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">💰 CryptoEdu</div>
+            <ul class="nav-links">
+                <li><a href="beranda.html">Beranda</a></li>
+                <li class="active"><a href="market.html">Market</a></li> <li><a href="portfolio.html">Portofolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="crypto-list-section">
+            <div class="header-market">
+                <h2>📈 Market Kripto Global (30 Besar)</h2>
+                <button id="refreshDataBtn">🔄 Refresh Data</button>
+            </div>
+            
+            <table class="crypto-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nama</th>
+                        <th>Harga</th>
+                        <th>Perubahan (24j)</th>
+                        <th>Kapitalisasi Pasar</th>
+                        <th>Volume (24j)</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+               <tbody id="cryptoDataBody">
+    <tr data-symbol="BTC">
+        <td>1</td>
+        <td>Bitcoin (BTC)</td>
+        <td data-price>Rp 1.050.000.000</td>
+        <td class="change positive">+2.5%</td>
+        <td>Rp 20.000 T</td>
+        <td>Rp 500 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="ETH">
+        <td>2</td>
+        <td>Ethereum (ETH)</td>
+        <td data-price>Rp 65.000.000</td>
+        <td class="change negative">-1.2%</td>
+        <td>Rp 8.000 T</td>
+        <td>Rp 250 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="USDT">
+        <td>3</td>
+        <td>Tether (USDT)</td>
+        <td data-price>Rp 15.500</td>
+        <td class="change neutral">0.0%</td>
+        <td>Rp 1.500 T</td>
+        <td>Rp 700 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="BNB">
+        <td>4</td>
+        <td>BNB (BNB)</td>
+        <td data-price>Rp 5.500.000</td>
+        <td class="change positive">+0.8%</td>
+        <td>Rp 850 T</td>
+        <td>Rp 80 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="SOL">
+        <td>5</td>
+        <td>Solana (SOL)</td>
+        <td data-price>Rp 1.500.000</td>
+        <td class="change negative">-4.7%</td>
+        <td>Rp 600 T</td>
+        <td>Rp 65 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="XRP">
+        <td>6</td>
+        <td>XRP (XRP)</td>
+        <td data-price>Rp 8.500</td>
+        <td class="change negative">-3.1%</td>
+        <td>Rp 450 T</td>
+        <td>Rp 55 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="USDC">
+        <td>7</td>
+        <td>USDC (USDC)</td>
+        <td data-price>Rp 15.490</td>
+        <td class="change neutral">0.0%</td>
+        <td>Rp 400 T</td>
+        <td>Rp 45 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="ADA">
+        <td>8</td>
+        <td>Cardano (ADA)</td>
+        <td data-price>Rp 7.200</td>
+        <td class="change positive">+1.5%</td>
+        <td>Rp 300 T</td>
+        <td>Rp 40 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="DOGE">
+        <td>9</td>
+        <td>Dogecoin (DOGE)</td>
+        <td data-price>Rp 1.800</td>
+        <td class="change negative">-0.5%</td>
+        <td>Rp 250 T</td>
+        <td>Rp 35 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="AVAX">
+        <td>10</td>
+        <td>Avalanche (AVAX)</td>
+        <td data-price>Rp 650.000</td>
+        <td class="change positive">+3.2%</td>
+        <td>Rp 200 T</td>
+        <td>Rp 30 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+
+    <tr data-symbol="DOT">
+        <td>11</td>
+        <td>Polkadot (DOT)</td>
+        <td data-price>Rp 85.000</td>
+        <td class="change negative">-2.1%</td>
+        <td>Rp 150 T</td>
+        <td>Rp 15 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="LINK">
+        <td>12</td>
+        <td>Chainlink (LINK)</td>
+        <td data-price>Rp 250.000</td>
+        <td class="change positive">+1.1%</td>
+        <td>Rp 120 T</td>
+        <td>Rp 12 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="MATIC">
+        <td>13</td>
+        <td>Polygon (MATIC)</td>
+        <td data-price>Rp 12.000</td>
+        <td class="change positive">+4.0%</td>
+        <td>Rp 110 T</td>
+        <td>Rp 10 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="TRX">
+        <td>14</td>
+        <td>TRON (TRX)</td>
+        <td data-price>Rp 1.600</td>
+        <td class="change negative">-0.3%</td>
+        <td>Rp 95 T</td>
+        <td>Rp 9 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="SHIB">
+        <td>15</td>
+        <td>Shiba Inu (SHIB)</td>
+        <td data-price>Rp 0.45</td>
+        <td class="change positive">+10.2%</td>
+        <td>Rp 90 T</td>
+        <td>Rp 10 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="LTC">
+        <td>16</td>
+        <td>Litecoin (LTC)</td>
+        <td data-price>Rp 1.100.000</td>
+        <td class="change negative">-0.9%</td>
+        <td>Rp 80 T</td>
+        <td>Rp 5 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="ETC">
+        <td>17</td>
+        <td>Ethereum Classic (ETC)</td>
+        <td data-price>Rp 400.000</td>
+        <td class="change positive">+0.6%</td>
+        <td>Rp 70 T</td>
+        <td>Rp 4 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="UNI">
+        <td>18</td>
+        <td>Uniswap (UNI)</td>
+        <td data-price>Rp 105.000</td>
+        <td class="change positive">+2.8%</td>
+        <td>Rp 60 T</td>
+        <td>Rp 3 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="FIL">
+        <td>19</td>
+        <td>Filecoin (FIL)</td>
+        <td data-price>Rp 80.000</td>
+        <td class="change negative">-1.5%</td>
+        <td>Rp 55 T</td>
+        <td>Rp 2.5 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="ICP">
+        <td>20</td>
+        <td>Internet Computer (ICP)</td>
+        <td data-price>Rp 150.000</td>
+        <td class="change negative">-3.5%</td>
+        <td>Rp 50 T</td>
+        <td>Rp 2 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+
+    <tr data-symbol="OP">
+        <td>21</td>
+        <td>Optimism (OP)</td>
+        <td data-price>Rp 35.000</td>
+        <td class="change positive">+5.1%</td>
+        <td>Rp 45 T</td>
+        <td>Rp 1.5 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="APT">
+        <td>22</td>
+        <td>Aptos (APT)</td>
+        <td data-price>Rp 120.000</td>
+        <td class="change positive">+0.9%</td>
+        <td>Rp 40 T</td>
+        <td>Rp 1.2 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="GRT">
+        <td>23</td>
+        <td>The Graph (GRT)</td>
+        <td data-price>Rp 2.800</td>
+        <td class="change negative">-0.7%</td>
+        <td>Rp 35 T</td>
+        <td>Rp 1.0 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="WLD">
+        <td>24</td>
+        <td>Worldcoin (WLD)</td>
+        <td data-price>Rp 65.000</td>
+        <td class="change negative">-5.9%</td>
+        <td>Rp 30 T</td>
+        <td>Rp 0.8 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="SUI">
+        <td>25</td>
+        <td>Sui (SUI)</td>
+        <td data-price>Rp 18.000</td>
+        <td class="change positive">+1.8%</td>
+        <td>Rp 25 T</td>
+        <td>Rp 0.7 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="PEPE">
+        <td>26</td>
+        <td>Pepe (PEPE)</td>
+        <td data-price>Rp 0.08</td>
+        <td class="change positive">+15.0%</td>
+        <td>Rp 20 T</td>
+        <td>Rp 0.6 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="IMX">
+        <td>27</td>
+        <td>Immutable X (IMX)</td>
+        <td data-price>Rp 32.000</td>
+        <td class="change negative">-1.1%</td>
+        <td>Rp 18 T</td>
+        <td>Rp 0.5 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="GALA">
+        <td>28</td>
+        <td>Gala (GALA)</td>
+        <td data-price>Rp 500</td>
+        <td class="change negative">-3.3%</td>
+        <td>Rp 15 T</td>
+        <td>Rp 0.4 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="VET">
+        <td>29</td>
+        <td>VeChain (VET)</td>
+        <td data-price>Rp 450</td>
+        <td class="change positive">+2.2%</td>
+        <td>Rp 12 T</td>
+        <td>Rp 0.3 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+    <tr data-symbol="BTT">
+        <td>30</td>
+        <td>BitTorrent (BTT)</td>
+        <td data-price>Rp 0.02</td>
+        <td class="change positive">+8.5%</td>
+        <td>Rp 10 T</td>
+        <td>Rp 0.2 T</td>
+        <td><button class="btn-trade">Beli/Jual</button></td>
+    </tr>
+</tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script> 
+</body>
+</html>

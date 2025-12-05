@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoEdu - Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">💰 CryptoEdu</div>
+            <ul class="nav-links">
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="market.html">Market</a></li>
+                <li class="active"><a href="portfolio.html">Portofolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="portfolio-summary">
+            <h2>💼 Ringkasan Portofolio Saya</h2>
+            <div class="summary-cards">
+                <div class="card">
+                    <h4>Total Nilai Aset</h4>
+                    <p class="value-large positive">Rp 155.450.000</p>
+                </div>
+                <div class="card">
+                    <h4>Keuntungan (24j)</h4>
+                    <p class="value-medium positive">+Rp 2.150.000</p>
+                </div>
+                <div class="card">
+                    <h4>Persentase Keuntungan</h4>
+                    <p class="value-medium positive">+1.4%</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="portfolio-holdings">
+            <h2>💰 Kepemilikan Aset</h2>
+            <table class="crypto-table">
+                <thead>
+                    <tr>
+                        <th>Aset</th>
+                        <th>Jumlah</th>
+                        <th>Harga Saat Ini</th>
+                        <th>Nilai Saat Ini</th>
+                        <th>Keuntungan/Kerugian</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bitcoin (BTC)</td>
+                        <td>0.12 BTC</td>
+                        <td data-price>Rp 1.050.000.000</td>
+                        <td>Rp 126.000.000</td>
+                        <td class="change positive">+1.8%</td>
+                    </tr>
+                    <tr>
+                        <td>Ethereum (ETH)</td>
+                        <td>0.3 ETH</td>
+                        <td data-price>Rp 65.000.000</td>
+                        <td>Rp 19.500.000</td>
+                        <td class="change negative">-0.5%</td>
+                    </tr>
+                    <tr>
+                        <td>Cardano (ADA)</td>
+                        <td>1200 ADA</td>
+                        <td data-price>Rp 7.200</td>
+                        <td>Rp 8.640.000</td>
+                        <td class="change positive">+4.2%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="portfolio-script.js"></script>
+</body>
+</html>

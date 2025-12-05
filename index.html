@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoEdu | Masuk & Daftar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-body">
+    <div class="auth-container">
+        <div class="auth-header">
+            <div class="logo">💰 CryptoEdu</div>
+            <h2>Selamat Datang!</h2>
+        </div>
+
+        <div class="auth-tabs">
+            <a href="#login-form" class="tab-button active">Masuk (Login)</a>
+            <a href="#signup-form" class="tab-button">Daftar (Sign Up)</a>
+        </div>
+
+      <div class="auth-form-wrapper" id="auth-forms">
+            
+            <div id="login-form" class="auth-form-content form-visible">
+                <form action="beranda.html"> 
+                    <div class="form-group">
+                        <label for="loginEmail">Email / Username</label>
+                        <input type="text" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Kata Sandi</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <p class="forgot-password"><a href="#">Lupa Kata Sandi?</a></p>
+                    <button type="submit" class="auth-btn"><a href="beranda.html"></a>Masuk ke CryptoEdu</button>
+                    <p class="switch-link">Belum punya akun? <a href="#signup-form">Daftar di sini</a></p>
+                </form>
+            </div>
+
+            <div id="signup-form" class="auth-form-content form-hidden">
+                <form action="beranda.html"> 
+                    <div class="form-group">
+                        <label for="signupUsername">Username</label>
+                        <input type="text" id="signupUsername" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email</label>
+                        <input type="email" id="signupEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Buat Kata Sandi</label>
+                        <input type="password" id="signupPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupConfirmPassword">Konfirmasi Kata Sandi</label>
+                        <input type="password" id="signupConfirmPassword" required>
+                    </div>
+                    <button type="submit" class="auth-btn"><a href="beranda.html"></a>Buat Akun Baru</button>
+                    <p class="switch-link">Sudah punya akun? <a href="#login-form">Masuk di sini</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

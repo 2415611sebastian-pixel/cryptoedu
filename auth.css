@@ -1,0 +1,147 @@
+
+:root {
+    --color-dark-blue: #0A192F; 
+    --color-navy: #172A45;     
+    --color-gold: #FFD700;     
+    --color-light-slate: #CCD6F6; 
+}
+
+.auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-dark-blue);
+    font-family: 'Poppins', sans-serif;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--color-navy); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    color: var(--color-light-slate);
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-header h2 {
+    color: var(--color-light-slate);
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.auth-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tab-button {
+    flex-grow: 1;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    color: var(--color-light-slate);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s, border-bottom 0.3s;
+    font-weight: 600;
+}
+
+.tab-button:hover {
+    color: var(--color-gold);
+}
+
+
+.auth-form-content {
+    display: none;
+}
+
+.auth-form-wrapper:not(:target) > #login-form,
+.auth-form-wrapper:target > #login-form {
+    display: block;
+}
+
+#signup-form:target {
+    display: block;
+}
+
+.auth-tabs a[href="#login-form"] {
+    border-bottom: 3px solid transparent;
+}
+.auth-tabs a[href="#signup-form"] {
+    border-bottom: 3px solid transparent;
+}
+
+.auth-form-wrapper:not(:target) ~ .auth-tabs a[href="#login-form"],
+#login-form:target ~ .auth-tabs a[href="#login-form"] {
+    color: var(--color-gold);
+    border-bottom: 3px solid var(--color-gold);
+}
+
+#signup-form:target ~ .auth-tabs a[href="#signup-form"] {
+    color: var(--color-gold);
+    border-bottom: 3px solid var(--color-gold);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: var(--color-gold);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d2038;
+    border: 1px solid #324a64;
+    border-radius: 5px;
+    color: var(--color-light-slate);
+    font-size: 1rem;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-gold);
+    color: var(--color-dark-blue);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.auth-btn:hover {
+    background-color: #e6c300;
+}
+
+.forgot-password, .switch-link {
+    text-align: right;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.switch-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.forgot-password a, .switch-link a {
+    color: var(--color-gold);
+    text-decoration: none;
+}
